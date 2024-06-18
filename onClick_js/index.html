@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onClick Events</title>
+
+    <style>
+        p{
+            color: red;
+            font-size: 30px;
+        }
+        form p {
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem molestias ad doloribus error perferendis, obcaecati, minus sit ea explicabo, possimus aliquid quae amet assumenda distinctio unde eligendi numquam architecto.</p>
+
+    <button onclick="return myFun()">Click</button> -->
+
+
+    <form action="" onsubmit="return onSubmitFun()">
+        <label for="">Name : </label>
+        <input type="text" placeholder="Enter your name" id="name" name="uNane">
+        <p id="Errname"></p>
+      
+        <label for="">Email : </label>
+        <input type="email" placeholder="Enter your Email" id="Email" name="uEmail">
+        <p id="ErrEmail"></p>
+       
+        <label for="">password : </label>
+        <input type="password" placeholder="Enter valid password" id="pass" name="upass">
+        <p id="Errpass"></p>
+
+        <label for="">Gender : </label>
+        <input type="radio" name="Gender" value="Male"> :Male
+        <input type="radio" name="Gender" value="Female"> :Female
+        <p id="Errgender"></p>
+
+        <label for="">select your city :</label>
+        <select name="city" id="city">
+            <option value="select">choice your city</option>
+            <option value="surat">Surat</option>
+            <option value="valsad">Valsad</option>
+            <option value="navsari">Navsari</option>
+            <option value="Nashik">Nashik</option>  
+        </select>
+        <p id="Errcity"></p>
+
+        <button type="submit">Sumit</button>
+        <br>
+        <br>
+
+    </form>
+
+
+    <h1 id="pre"></h1>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

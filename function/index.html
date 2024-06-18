@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+
+    <!-- 
+    <script>
+
+        //without parameters not return
+        function fun1() {
+            console.log("i love javascript");
+        }
+        fun1();
+
+        let funt = function(){
+            console.log("hellow javacript diniyya");
+        }
+        funt();
+
+        const sun1 = () => {
+            console.log("kiya baat kare")
+        }
+        sun1();
+
+        //with parameters not return
+        function fun(a, b) {  //(parameters)
+            console.log("hellow world");
+            console.log("sum is ",c);
+        }
+        let c = 20 + 20;
+        fun(c); //(arguments) call(invoke)
+
+        let fun2 = function  (x, y) {
+            console.log("multiplucathion is := ", ans);
+            console.log("bhai bhaai su che aa.....!");
+        }
+        let ans = 20 * 20;
+        fun2(ans);
+
+        let fun3 = (a, b) => {
+            console.log("subtraction is := ",sub);
+        }
+        let sub = 50 - 30;
+        fun3(sub);
+
+        //with parameters and return
+        function fun4(a, b) {
+            console.log("multiplication : ", a * b);
+            return a + b;
+            
+        }
+        let sum = fun4(10, 20);
+        console.log("sum of number : ", sum);
+
+        let fun5 = function (a, b){
+            ans = a / b;
+            return ans;
+        }
+        let lots = fun5(50, 10);
+        console.log("divistion of number : ", lots);
+
+        const fun6 = (m, n) => {
+            console.log("sum of number : ", m + n);
+            return m + n;
+        }
+        let fixd = fun6(10, 20);
+        console.log("sum of number : ", fixd);
+
+        //without parameters and return
+        function fun7() {
+            console.log("hellow world");
+            return 10 + 20;
+        }
+        let fix = fun7();
+        console.log("sum of number : ", fix);
+
+       const fun9 = () => {
+           console.log("hellow world");
+           return 10 + 70;
+       }
+       let fixde = fun9();
+       console.log("sum of number : ", fixde);
+
+        
+    </script> -->
+
+    <!-- recerssion function -->
+    <!-- <script>
+        let facto = 1;
+        const fact = (n) => {
+            if (n != 0) {
+                facto = facto*n;
+                fact(n - 1);
+            }
+            return facto;
+        }
+        let f = fact(6);
+        console.log("factorial of numner := ", f);
+
+    </script> -->
+
+    <!-- IIFE functiion -->
+
+    <script>
+        // (function (){
+        //     console.log("hellow world");    
+        // })();
+
+    
+
+
+        // balance chak code
+        const atm = (function (inBalance) {
+            let balance = inBalance;
+
+            function withdraw(amt) {
+
+                if (amt > balance) {
+                    console.log("you are not a Balance");
+                } 
+                else {
+
+                    balance -= amt;
+                    return balabce;
+
+                }
+                return { withdraw};
+            };
+
+            let Deep = (10000);
+            console.log("Deep Patel account balance is : ", Deep);
+        })();
+    </script>
+</body>
+
+</html>

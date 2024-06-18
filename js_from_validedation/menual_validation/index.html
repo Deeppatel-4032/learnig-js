@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>menual validation form</title>
+</head>
+<body style="text-align: center; display: flex; flex-direction: column; margin: 150px 0;">
+	<h1>registration form for student</h1>
+	<font method="" action="" id="myForm">
+		<label>name :</label>
+			<input type="text" name="uname" id="name" placeholder="Enter your name" required></input>
+		<br>
+		<br>
+		<label>Email ID:</label>
+			<input type="email" name="uEmail" id="email" placeholder="Enter your email"></input>
+		<br>
+		<br>
+		<label>password :</label>
+			<input type="password" name="upass" id="pass" placeholder="Enter your password"></input>
+		<br>
+		<br>
+		<label>phone no. :</label>
+			<input type="number" name="number" id="phone" placeholder="Enter your number"></input>
+		<br>
+		<br>
+		<label>Gender :</label>
+			<input type="radio" name="Gender" id="male" value="male">male</input>
+			<input type="radio" name="Gender" id="femal" value="female">femal</input>
+			<input type="radio" name="Gender" id="other" value="other">other</input>
+		<br>
+		<br>
+		<label>hobby :</label>
+			<input type="checkbox" name="hobby">travelling</input>
+			<input type="checkbox" name="hobby">reding</input>
+			<input type="checkbox" name="hobby">music</input>
+		<br>
+		<br>
+		<label>city :</label>
+			<select name="city" id="city">
+				<option value="surat">surat</option>
+				<option value="vapi">vapi</option>
+				<option value="valsad">valsad</option>
+				<option value="navsari">navsari</option>
+				<option value="udwada">Udwada</option>
+				<option value="Ahemdabad">Ahemdabad</option>
+			</select>
+		<br>
+		<br>
+		<button type="submit">submit</button>
+		
+	</form>
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JQuery validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/jquery.validate.min.js"></script>
+    
+    <!-- script js -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

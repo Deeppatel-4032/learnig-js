@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation in JavaScript</title>
+</head>
+<body>
+
+    <h2 id="account"></h2>
+    <h2 id="accountDeposited"></h2>
+    <h2 id="accountWithdrew"></h2>
+    <h2 id="accountCurrent"></h2>
+    <!-- <script src="./js/script.js"></script> -->
+
+    <script>
+        class BankAccount {
+            #blance
+            constructor(amount) {
+                this.#blance = amount;
+
+                console.log(`your account blance is ${this.#blance}`);
+            }
+
+            depositedAmount(amount) {
+                if (amount >= 0 && amount != 0) {
+                    this.#blance += amount;
+                    this.#desplyAmount();
+                    console.log(`Deposited is sucessfull....!${amount}`);
+                } else {
+
+                    console.log(`plase Enter the valide deposited amount`);
+                }
+            }
+
+            withdrawAmount(amount) {
+                if (amount <= this.#blance && amount > 0) {
+                    this.#blance -= amount;
+                    this.#desplyAmount();
+                    console.log(`withraw is sucessfull...!${amount}`);
+                } else {
+                    console.log(`plase Enter the valid amount`);
+                }
+            }
+
+            #desplyAmount(amount) {
+                console.log(`your current blance is ${this.#blance}`);
+            }
+        }
+
+        const user = new BankAccount(1000);
+        user.depositedAmount(1000);
+        user.withdrawAmount(100);
+    </script>
+</body>
+</html>
