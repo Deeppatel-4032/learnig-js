@@ -13,7 +13,7 @@ const calc = (a, b) => {
     }
 }
 try{
-     let ans = calc(10, 0);
+     let ans = calc(1000, 1000);
      p.innerHTML = ("ans is : ", ans);
     console.log("ans is : ",ans);
 
